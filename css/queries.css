@@ -1,0 +1,238 @@
+/*rem and em do NOT depend on html font-size in media queries!
+Instead, arem = 1em = 16px 
+Some of browser have bugs with rem but not with em*/
+
+/******************************/
+/* BELOW 1344px (Smaller desktops)*/
+/******************************/
+/*1350 / 16 (1 rem) = 84em*/
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .section-hero {
+    background-position: 55rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+  }
+
+  .section-how {
+    padding: 9.6rem 10rem;
+  }
+
+  .step-description {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .section-meals {
+    padding: 9.6rem 10rem;
+  }
+
+  .section-pricing {
+    padding: 9.6rem 10rem;
+  }
+
+  .section-cta {
+    padding: 9.6rem 10rem;
+  }
+
+  .footer {
+    padding: 12.8rem 10rem;
+  }
+}
+
+/******************************/
+/* BELOW 1200px (Landscape tablets)*/
+/******************************/
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .hero {
+    max-width: 110rem;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .section-hero {
+    background-position: 55rem;
+    /* padding-left: 8rem;
+    padding-right: 8rem; */
+  }
+
+  .btn--outline {
+    padding: 1rem 2rem;
+  }
+
+  .section-featured {
+    padding: 4.8rem 8rem;
+  }
+
+  .section-how {
+    padding: 9.6rem 10rem;
+  }
+
+  .step-description {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .section-meals {
+    padding: 9.6rem 10rem;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+  }
+
+  .section-pricing {
+    padding: 9.6rem 10rem;
+  }
+
+  .pricing-plan {
+    border-radius: 11px;
+    padding: 3.2rem;
+    width: 75%;
+  }
+
+  .section-cta {
+    padding: 9.6rem 10rem;
+  }
+
+  .cta-text-box {
+    padding: 3.2rem 4.8rem 4.8rem 4.8rem;
+  }
+
+  .footer {
+    padding: 12.8rem 10rem;
+  }
+}
+
+/******************************/
+/* BELOW 948px (Tablets)*/
+/******************************/
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    max-width: 95rem;
+    grid-template-columns: 1.3fr 0.7fr;
+  }
+
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .section-hero {
+    background-position: 45rem;
+    /* padding-left: 8rem;
+    padding-right: 8rem; */
+  }
+
+  .delivered-meals {
+    margin-top: 6rem;
+    padding-right: 6rem;
+  }
+
+  .section-featured {
+    padding: 4.8rem 8rem;
+  }
+
+  .logos img {
+    height: 2.4rem;
+    filter: brightness(0);
+    opacity: 50%;
+  }
+
+  .section-how {
+    padding: 9.6rem 8rem;
+  }
+
+  .step-description {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .grid--3-cols {
+    column-gap: 3.2rem;
+  }
+
+  .section-meals {
+    padding: 9.6rem 8rem;
+  }
+
+  .meal-content {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .meal-attributes {
+    gap: 4rem;
+  }
+
+  .section-pricing {
+    padding: 9.6rem 8rem;
+  }
+
+  .pricing-plan--complete::after {
+    position: absolute;
+    top: 5%;
+    right: -23%;
+  }
+
+  .pricing-plan {
+    border-radius: 11px;
+    padding: 3.2rem;
+    width: 85%;
+  }
+
+  .section-cta {
+    padding: 9.6rem 8rem;
+  }
+
+  .cta-text-box {
+    padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+  }
+
+  .footer {
+    padding: 12.8rem 8rem;
+  }
+}
+
+/*
+- Font size system(px):
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px):
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+*/
