@@ -236,6 +236,7 @@ Some of browser have bugs with rem but not with em*/
   }
 
   .main-nav {
+    background-color: #fff;
     position: absolute;
     top: 0;
     left: 0;
